@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="ms__ Married-civ-spouse <= 0.5\ngini = 0.367\nsamples = 22792\nvalue = [17273, 5519]"] ;
+1 [label="hours_per_week <= 44.5\ngini = 0.122\nsamples = 12286\nvalue = [11482, 804]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="age <= 34.5\ngini = 0.069\nsamples = 9840\nvalue = [9486, 354]"] ;
+1 -> 2 ;
+3 [label="gini = 0.022\nsamples = 5819\nvalue = [5755, 64]"] ;
+2 -> 3 ;
+4 [label="gini = 0.134\nsamples = 4021\nvalue = [3731, 290]"] ;
+2 -> 4 ;
+5 [label="age <= 29.5\ngini = 0.3\nsamples = 2446\nvalue = [1996, 450]"] ;
+1 -> 5 ;
+6 [label="gini = 0.111\nsamples = 816\nvalue = [768, 48]"] ;
+5 -> 6 ;
+7 [label="gini = 0.372\nsamples = 1630\nvalue = [1228, 402]"] ;
+5 -> 7 ;
+8 [label="educ__ Bachelors <= 0.5\ngini = 0.495\nsamples = 10506\nvalue = [5791, 4715]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="oc__ Prof-specialty <= 0.5\ngini = 0.479\nsamples = 8556\nvalue = [5162, 3394]"] ;
+8 -> 9 ;
+10 [label="gini = 0.457\nsamples = 7549\nvalue = [4880, 2669]"] ;
+9 -> 10 ;
+11 [label="gini = 0.403\nsamples = 1007\nvalue = [282, 725]"] ;
+9 -> 11 ;
+12 [label="hours_per_week <= 34.5\ngini = 0.437\nsamples = 1950\nvalue = [629, 1321]"] ;
+8 -> 12 ;
+13 [label="gini = 0.485\nsamples = 169\nvalue = [99, 70]"] ;
+12 -> 13 ;
+14 [label="gini = 0.418\nsamples = 1781\nvalue = [530, 1251]"] ;
+12 -> 14 ;
+}
